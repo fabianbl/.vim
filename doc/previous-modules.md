@@ -5,3 +5,4 @@
 * Vundle.vim
 * vim-indent-guides
 * YouCompleteMe
+* deoplete.vim (as separate folder)
