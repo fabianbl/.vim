@@ -1,6 +1,6 @@
 # Set Neovim as Default Editor #
 
 ```
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 ```
