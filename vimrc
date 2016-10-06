@@ -33,4 +33,16 @@ set nowrap
 " Enable 'make' command.
 set makeprg=[[\ -f\ Makefile\ ]]\ &&\ make\ \\\|\\\|\ make\ -C\ ..
 set cinoptions+=g1
-"let g:loaded_youcompleteme = 1
+
+" Copy from/to system clipboard (needs xclip).
+" (https://github.com/neovim/neovim/issues/583)
+function! ClipboardYank()
+  call system('xclip -i -selection clipboard', @@)
+endfunction
+function! ClipboardPaste()
+  let @@ = system('xclip -o -selection clipboard')
+endfunction
+
+vnoremap <silent> y y:call ClipboardYank()<cr>
+vnoremap <silent> d d:call ClipboardYank()<cr>
+nnoremap <silent> p :call ClipboardPaste()<cr>p
