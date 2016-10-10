@@ -37,5 +37,7 @@ Open a new window of the specified tag:
 
 Position cursor over command/variable and jump to definition with `Ctrl-]`.
 
+Return from tag with `:pop` command or `Ctrl-t`.
+
 More information:
 http://vim.wikia.com/wiki/Browsing_programs_with_tags
