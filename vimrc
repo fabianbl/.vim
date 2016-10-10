@@ -46,3 +46,13 @@ endfunction
 vnoremap <silent> y y:call ClipboardYank()<cr>
 vnoremap <silent> d d:call ClipboardYank()<cr>
 nnoremap <silent> p :call ClipboardPaste()<cr>p
+
+" Open new split panes to right and bottom (instead of left and top).
+set splitbelow
+set splitright
+
+" Remap ctrl-[hjkl] to navigate splits.
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
