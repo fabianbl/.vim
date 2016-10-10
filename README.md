@@ -35,7 +35,14 @@ Open a new window of the specified tag:
 :stag <tagname>
 ```
 
-Position cursor over command/variable and jump to definition with `Ctrl-]`.
+Show all matches (for new window `stselect`):
+```vim
+:tselect <tagname>
+```
+
+Position cursor over command/variable and jump to definition with `Ctrl-]`. To open a new window, use `Ctrl-W ]`.
+
+Show all matches for cursor position command/variable with `g]` or `Ctrl-W g]` for new split window.
 
 Return from tag with `:pop` command or `Ctrl-t`.
 
