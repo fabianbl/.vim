@@ -49,6 +49,8 @@ Return from tag with `:pop` command or `Ctrl-t`.
 More information:
 http://vim.wikia.com/wiki/Browsing_programs_with_tags
 
+# Possible Extensions #
+
 ## Python ##
 
 Enable Python support for Neovim:
@@ -60,3 +62,18 @@ pip3 install --upgrade neovim
 
 More information: https://github.com/neovim/neovim/wiki/FAQ#python-support-isnt-working
 
+## Deoplete ##
+
+Add this to vimrc:
+```vim
+" Set python path.
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
+
+" Should also be posssible with pathegon.
+set runtimepath+=~/.vim/deoplete.nvim/
+execute deoplete#enable()
+let deoplete#tag#cache_limit_size = 5000000
+```
+
+Probably it will be necessary to use [deoplete-clang](https://github.com/zchee/deoplete-clang).
