@@ -48,3 +48,15 @@ Return from tag with `:pop` command or `Ctrl-t`.
 
 More information:
 http://vim.wikia.com/wiki/Browsing_programs_with_tags
+
+## Python ##
+
+Enable Python support for Neovim:
+```bash
+pip  install --upgrade neovim
+pip2 install --upgrade neovim
+pip3 install --upgrade neovim
+```
+
+More information: https://github.com/neovim/neovim/wiki/FAQ#python-support-isnt-working
+
