@@ -49,6 +49,13 @@ Return from tag with `:pop` command or `Ctrl-t`.
 More information:
 http://vim.wikia.com/wiki/Browsing_programs_with_tags
 
+## NERDTree ##
+
+Find current file:
+```vim
+:NERDTreeFind
+```
+
 # Possible Extensions #
 
 ## Python ##
