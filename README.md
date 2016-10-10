@@ -1,7 +1,41 @@
-# .vim
+# .vim #
+
+## General ##
 
 My vim/nvim config file and packages.
 
 More packages on the [Vim Awesome](http://vimawesome.com/) page.
 
-Add new submodules with: `git submodule add SUBMODULE`
+## Submodules ##
+
+Add new submodules with:
+```bash
+git submodule add SUBMODULE
+```
+
+## Ctags ##
+
+Install ctags on Ubuntu 14.04 with:
+```bash
+sudo apt-get install exuberant-ctags
+```
+
+Run inside the project folder:
+```bash
+ctags -R .
+```
+
+Jump to a specific tag in vim:
+```vim
+:tag <tagname>
+```
+
+Open a new window of the specified tag:
+```vim
+:stag <tagname>
+```
+
+Position cursor over command/variable and jump to definition with `Ctrl-]`.
+
+More information:
+http://vim.wikia.com/wiki/Browsing_programs_with_tags
