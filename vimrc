@@ -24,8 +24,8 @@ set textwidth=80
 set list
 set number
 
-" Remove search highlighting with Ctrl+L.
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+" Remove search highlighting with Ctrl+I.
+nnoremap <silent> <C-i> :nohl<CR><C-i>
 
 " Turn off wrap.
 set nowrap
