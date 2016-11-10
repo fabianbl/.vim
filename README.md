@@ -13,6 +13,13 @@ Add new submodules with:
 git submodule add SUBMODULE
 ```
 
+Update all submodules to master:
+```bash
+git submodule foreach "(git checkout master; git pull)&"
+```
+
+More info here: http://stackoverflow.com/questions/1030169/easy-way-pull-latest-of-all-submodules
+
 ## Ctags ##
 
 Install ctags on Ubuntu 14.04 with:
