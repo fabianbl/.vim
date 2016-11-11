@@ -63,6 +63,16 @@ Find current file:
 :NERDTreeFind
 ```
 
+## Splits / Tabs ##
+
+To change *two* vertically split windows to horizonally split:
+<kbd>Ctrl</kbd>-<kbd>w</kbd> <kbd>t</kbd> <kbd>Ctrl</kbd>-<kbd>w</kbd> <kbd>K</kbd>
+
+Horizontally to vertically: 
+<kbd>Ctrl</kbd>-<kbd>w</kbd> <kbd>t</kbd> <kbd>Ctrl</kbd>-<kbd>w</kbd> <kbd>H</kbd>
+
+Note: <kbd>Ctrl</kbd>-<kbd>w</kbd> <kbd>t</kbd> can be omitted with only two open splits.
+
 # Possible Extensions #
 
 ## Python ##
