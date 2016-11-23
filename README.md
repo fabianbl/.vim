@@ -64,6 +64,10 @@ Find current file:
 ```
 
 ## Splits / Tabs ##
+Open a new empty tab:
+```vim
+:tabe
+```
 
 To change *two* vertically split windows to horizonally split:
 <kbd>Ctrl</kbd>-<kbd>w</kbd> <kbd>t</kbd> <kbd>Ctrl</kbd>-<kbd>w</kbd> <kbd>K</kbd>
