@@ -14,7 +14,7 @@ let g:tex_indent_brace=0
 colorscheme atom-dark-256
 
 " Nerdtree with Ctrl-N.
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeTabsToggle<CR>
 
 " 80 lines.
 set colorcolumn=81
