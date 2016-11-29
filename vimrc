@@ -16,6 +16,10 @@ colorscheme atom-dark-256
 " Nerdtree with Ctrl-N.
 map <C-n> :NERDTreeTabsToggle<CR>
 
+" Nerdtree options.
+let g:NERDTreeMinimalUI=1
+let g:NERDTreeShowHidden=1
+
 " 80 lines.
 set colorcolumn=81
 set textwidth=80
