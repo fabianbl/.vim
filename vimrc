@@ -65,4 +65,4 @@ nmap <silent> <c-l> :wincmd l<CR>
 let g:airline_theme='jellybeans'
 
 " Interpret ROS launch files as XML.
-autocmd BufRead,BufNewFile *.launch setfiletype roslaunch
+autocmd BufRead,BufNewFile *.launch setfiletype xml
