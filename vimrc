@@ -63,3 +63,6 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 " Vim Airline Theme
 let g:airline_theme='jellybeans'
+
+" Interpret ROS launch files as XML.
+autocmd BufRead,BufNewFile *.launch setfiletype roslaunch
