@@ -11,7 +11,15 @@ set expandtab
 let g:tex_indent_brace=0
 
 " Colorscheme.
-colorscheme atom-dark-256
+if has("nvim")
+  colorscheme atom-dark-256
+  syntax on
+  set list
+else
+  colorscheme atom-dark
+  syntax on
+  highlight ColorColumn ctermbg=7
+endif
 
 " Nerdtree with Ctrl-N.
 map <C-n> :NERDTreeTabsToggle<CR>
@@ -24,8 +32,7 @@ let g:NERDTreeShowHidden=1
 set colorcolumn=81
 set textwidth=80
 
-" Display whitespace, line numbers.
-set list
+" Display line numbers.
 set number
 
 " Remove search highlighting with Ctrl+I.
