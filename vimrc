@@ -73,3 +73,6 @@ let g:airline_theme='jellybeans'
 
 " Interpret ROS launch files as XML.
 autocmd BufRead,BufNewFile *.launch setfiletype xml
+
+" Clang format style Google.
+let g:clang_format#code_stye='google'
