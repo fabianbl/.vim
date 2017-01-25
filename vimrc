@@ -76,3 +76,6 @@ autocmd BufRead,BufNewFile *.launch setfiletype xml
 
 " Clang format style Google.
 let g:clang_format#code_stye='google'
+
+" Fixing some strange characters (https://github.com/neovim/neovim/issues/5990).
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
