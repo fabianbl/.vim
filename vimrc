@@ -78,10 +78,8 @@ autocmd BufRead,BufNewFile *.launch setfiletype xml
 let g:clang_format#code_stye='google'
 
 " Fixing some strange characters (https://github.com/neovim/neovim/issues/5990).
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+" let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+" :set guicursor=
 
 " Nerdcommenter options.
 let g:NERDSpaceDelims = 1
-
-" Option to not have strange signs.
-:set guicursor=
