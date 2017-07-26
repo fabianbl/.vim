@@ -28,3 +28,6 @@
 [submodule "bundle/vim-clang-format"]
 	path = bundle/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format.git
+[submodule "bundle/vim-lilypond-integrator"]
+	path = bundle/vim-lilypond-integrator
+	url = git@github.com:gisraptor/vim-lilypond-integrator.git
