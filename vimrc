@@ -83,3 +83,6 @@ let g:clang_format#code_stye='google'
 
 " Nerdcommenter options.
 let g:NERDSpaceDelims = 1
+
+" Do not show a diff for autopep8.
+let g:autopep8_disable_show_diff=1
