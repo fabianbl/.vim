@@ -31,3 +31,6 @@
 [submodule "bundle/vim-lilypond-integrator"]
 	path = bundle/vim-lilypond-integrator
 	url = git@github.com:gisraptor/vim-lilypond-integrator.git
+[submodule "bundle/vim-autopep8"]
+	path = bundle/vim-autopep8
+	url = git@github.com:tell-k/vim-autopep8.git
