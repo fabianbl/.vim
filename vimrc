@@ -86,3 +86,7 @@ let g:NERDSpaceDelims = 1
 
 " Do not show a diff for autopep8.
 let g:autopep8_disable_show_diff=1
+let g:autopep8_aggressive=2
+
+" Yapf options.
+let g:yapf_style = "google"
