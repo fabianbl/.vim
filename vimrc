@@ -30,7 +30,7 @@ let g:NERDTreeShowHidden=1
 
 " 80 lines.
 set colorcolumn=81
-set textwidth=80
+" set textwidth=80
 
 " Display line numbers.
 set number
