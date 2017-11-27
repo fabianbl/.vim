@@ -40,3 +40,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/vim-ros"]
+	path = bundle/vim-ros
+	url = git@github.com:taketwo/vim-ros.git
