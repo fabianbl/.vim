@@ -90,6 +90,7 @@ let g:autopep8_aggressive=2
 
 " Yapf options.
 let g:yapf_style = "google"
+autocmd FileType python setlocal tabstop=2 shiftwidth=2
 
 " Jedi-vim options.
 let g:jedi#popup_on_dot = 0
