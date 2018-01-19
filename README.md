@@ -1,5 +1,11 @@
 # .vim #
 
+## Dependencies ##
+
+```bash
+sudo pip install yapf
+```
+
 ## General ##
 
 My vim/nvim config file and packages.

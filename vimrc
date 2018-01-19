@@ -9,6 +9,7 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 let g:tex_indent_brace=0
+autocmd FileType python setlocal tabstop=2 shiftwidth=2
 
 " Colorscheme.
 if has("nvim")
@@ -81,17 +82,11 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 " Nerdcommenter options.
 let g:NERDSpaceDelims = 1
 
-" Do not show a diff for autopep8.
-let g:autopep8_disable_show_diff=1
-let g:autopep8_aggressive=2
-
-" Yapf options.
-let g:yapf_style = "google"
-autocmd FileType python setlocal tabstop=2 shiftwidth=2
-
-" Vim-autoformat options.
+" Options for vim-autoformat.
 noremap <F3> :Autoformat<CR>
 let g:formatdef_clangformat='"clang-format -style=file -fallback-style=google"'
+let g:formatters_python=['yapf']
+let g:formatter_yapf_style='google'
 
 " Jedi-vim options.
 let g:jedi#popup_on_dot = 0
