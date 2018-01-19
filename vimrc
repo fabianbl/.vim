@@ -74,9 +74,6 @@ let g:airline_theme='jellybeans'
 " Interpret ROS launch files as XML.
 autocmd BufRead,BufNewFile *.launch setfiletype xml
 
-" Clang format style Google.
-let g:clang_format#code_stye='google'
-
 " Fixing some strange characters (https://github.com/neovim/neovim/issues/5990).
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 :set guicursor=
@@ -91,6 +88,10 @@ let g:autopep8_aggressive=2
 " Yapf options.
 let g:yapf_style = "google"
 autocmd FileType python setlocal tabstop=2 shiftwidth=2
+
+" Vim-autoformat options.
+noremap <F3> :Autoformat<CR>
+let g:formatdef_clangformat='"clang-format -style=file -fallback-style=google"'
 
 " Jedi-vim options.
 let g:jedi#popup_on_dot = 0

@@ -43,3 +43,6 @@
 [submodule "bundle/vim-ros"]
 	path = bundle/vim-ros
 	url = git@github.com:taketwo/vim-ros.git
+[submodule "bundle/vim-autoformat"]
+	path = bundle/vim-autoformat
+	url = git@github.com:Chiel92/vim-autoformat.git
