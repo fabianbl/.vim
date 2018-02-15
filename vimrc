@@ -87,6 +87,3 @@ noremap <F3> :Autoformat<CR>
 let g:formatdef_clangformat='"clang-format -style=file -fallback-style=google"'
 let g:formatters_python=['yapf']
 let g:formatter_yapf_style='google'
-
-" Jedi-vim options.
-let g:jedi#popup_on_dot = 0

@@ -37,9 +37,6 @@
 [submodule "bundle/vim-yapf"]
 	path = bundle/vim-yapf
 	url = git@github.com:mindriot101/vim-yapf.git
-[submodule "bundle/jedi-vim"]
-	path = bundle/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/vim-ros"]
 	path = bundle/vim-ros
 	url = git@github.com:taketwo/vim-ros.git
