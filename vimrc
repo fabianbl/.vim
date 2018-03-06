@@ -88,5 +88,18 @@ let g:formatdef_clangformat='"clang-format -style=file -fallback-style=google"'
 let g:formatters_python=['yapf']
 let g:formatter_yapf_style='google'
 
+" HeaderGuards
+function! g:HeaderguardName()
+  let project_name = expand('%:p:gs@.*include/\(.*\)/.*@\1@g')
+  let project_name = substitute(project_name, '[^0-9a-zA-Z_]', '_', 'g')
+  let project_name = toupper(project_name)
+  let file_name = toupper(expand('%:t:gs/[^0-9a-zA-Z_]/_/g'))
+  return project_name . "_" . file_name . "_"
+endfunction
+
+function! g:HeaderguardLine3()
+  return "#endif  // " . g:HeaderguardName() . ""
+endfunction
+
 " Jedi-vim options.
 let g:jedi#popup_on_dot = 0
