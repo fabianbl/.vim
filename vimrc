@@ -39,9 +39,6 @@ set number
 " Remove search highlighting with Ctrl+I.
 nnoremap <silent> <C-i> :nohl<CR><C-i>
 
-" Turn off wrap.
-set nowrap
-
 " Enable 'make' command.
 set makeprg=[[\ -f\ Makefile\ ]]\ &&\ make\ \\\|\\\|\ make\ -C\ ..
 set cinoptions+=g1
