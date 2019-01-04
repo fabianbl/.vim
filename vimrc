@@ -3,6 +3,7 @@ call plug#begin('~/.vim/bundle')
 Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
 Plug 'drmikehenry/vim-headerguard'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ntpeters/vim-better-whitespace'
@@ -14,9 +15,20 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
-" let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let mapleader = ","
 
-" syntax on
+" YouCompleteMe.
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+map <leader>g :YcmCompleter GoTo<cr>
+map <leader>x :YcmCompleter GoToDefinition<cr>
+map <leader>c :YcmCompleter GoToDeclaration<cr>
+map <leader>t :YcmCompleter GetType<cr>
+map <leader>i :YcmCompleter GoToInclude<cr>
+map <leader>h :YcmCompleter GetDoc<cr>
+
+syntax on
 filetype plugin indent on
 
 " Tab settings.
@@ -47,7 +59,6 @@ let g:NERDTreeShowHidden=1
 
 " 80 lines.
 set colorcolumn=81
-" set textwidth=80
 
 " Display line numbers.
 set number
@@ -55,18 +66,11 @@ set number
 " Remove search highlighting with Ctrl+I.
 nnoremap <silent> <C-i> :nohl<CR><C-i>
 
-" Copy from/to system clipboard (needs xclip).
-" (https://github.com/neovim/neovim/issues/583)
-function! ClipboardYank()
-  call system('xclip -i -selection clipboard', @@)
-endfunction
-function! ClipboardPaste()
-  let @@ = system('xclip -o -selection clipboard')
-endfunction
+" Automatically detect when a file is changed.
+set autoread
 
-vnoremap <silent> y y:call ClipboardYank()<cr>
-vnoremap <silent> d d:call ClipboardYank()<cr>
-nnoremap <silent> p :call ClipboardPaste()<cr>p
+" Use system clipboard.
+set clipboard=unnamedplus
 
 " Open new split panes to right and bottom (instead of left and top).
 set splitbelow
