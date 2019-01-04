@@ -1,6 +1,22 @@
 " Minimal.
-execute pathogen#infect()
-syntax on
+call plug#begin('~/.vim/bundle')
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Chiel92/vim-autoformat'
+Plug 'drmikehenry/vim-headerguard'
+Plug 'taketwo/vim-ros'
+Plug 'vim-airline/vim-airline'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Valloric/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+call plug#end()
+
+" let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+" syntax on
 filetype plugin indent on
 
 " Tab settings.
@@ -38,10 +54,6 @@ set number
 
 " Remove search highlighting with Ctrl+I.
 nnoremap <silent> <C-i> :nohl<CR><C-i>
-
-" Enable 'make' command.
-set makeprg=[[\ -f\ Makefile\ ]]\ &&\ make\ \\\|\\\|\ make\ -C\ ..
-set cinoptions+=g1
 
 " Copy from/to system clipboard (needs xclip).
 " (https://github.com/neovim/neovim/issues/583)
@@ -97,6 +109,3 @@ endfunction
 function! g:HeaderguardLine3()
   return "#endif  // " . g:HeaderguardName() . ""
 endfunction
-
-" Jedi-vim options.
-let g:jedi#popup_on_dot = 0
