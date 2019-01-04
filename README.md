@@ -98,6 +98,18 @@ More information: https://github.com/neovim/neovim/wiki/FAQ#python-support-isnt-
 
 ## Deoplete ##
 
+Install/update neovim/python module.
+
+```bash
+pip3 install --user --upgrade pynvim
+```
+
+For deoplete-clang, clang is needed:
+
+```
+sudo apt install clang
+```
+
 Add this to vimrc:
 ```vim
 " Set python path.

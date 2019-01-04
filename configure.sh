@@ -11,3 +11,4 @@ ln -fs ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
 # Get pathogen.
 mkdir -p autoload bundle
 curl -LSso autoload/pathogen.vim https://tpo.pe/pathogen.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
