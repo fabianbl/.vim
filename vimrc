@@ -1,17 +1,17 @@
 " Minimal.
 call plug#begin('~/.vim/bundle')
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Chiel92/vim-autoformat'
+Plug 'Valloric/YouCompleteMe'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'drmikehenry/vim-headerguard'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 Plug 'taketwo/vim-ros'
 Plug 'vim-airline/vim-airline'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'Valloric/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 
 " let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
