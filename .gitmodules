@@ -1,9 +1,0 @@
-[submodule "bundle/vim-clang-format"]
-	path = bundle/vim-clang-format
-	url = https://github.com/rhysd/vim-clang-format.git
-[submodule "bundle/vim-autopep8"]
-	path = bundle/vim-autopep8
-	url = git@github.com:tell-k/vim-autopep8.git
-[submodule "bundle/vim-yapf"]
-	path = bundle/vim-yapf
-	url = git@github.com:mindriot101/vim-yapf.git
