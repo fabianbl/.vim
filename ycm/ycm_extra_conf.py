@@ -90,6 +90,7 @@ flags = [
 '-I/usr/lib/openmpi/include',
 '-I/usr/lib/openmpi/include/openmpi',
 '-I/usr/include/python2.7',
+'-/usr/include/python3.6',
 '-I/usr/include/jsoncpp',
 '-I/usr/include/hdf5/openmpi',
 '-I/usr/include/libxml2',

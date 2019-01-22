@@ -37,7 +37,7 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 let g:tex_indent_brace=0
-autocmd FileType python setlocal tabstop=2 shiftwidth=2
+autocmd FileType python setlocal tabstop=4 shiftwidth=4
 
 " Colorscheme.
 if has("nvim")
