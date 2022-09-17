@@ -6,6 +6,10 @@
 sudo pip install yapf
 ```
 
+## Vim-plug ##
+
+Follow the instructions [here](https://github.com/junegunn/vim-plug).
+
 ## General ##
 
 My vim/nvim config file and packages.
