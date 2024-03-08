@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy vimrc.
-cp vimrc ../.vimrc
+cp vimrc ~/.vimrc
 
 # Neovim configuration.
 mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
