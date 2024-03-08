@@ -114,3 +114,5 @@ endfunction
 function! g:HeaderguardLine3()
   return "#endif  // " . g:HeaderguardName() . ""
 endfunction
+
+set statusline+=%3{codeium#GetStatusString()}
