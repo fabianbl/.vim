@@ -1,7 +1,7 @@
 " Minimal.
 call plug#begin('~/.vim/bundle')
 Plug 'Chiel92/vim-autoformat'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'drmikehenry/vim-headerguard'
