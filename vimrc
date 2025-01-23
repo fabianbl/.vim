@@ -64,8 +64,8 @@ set colorcolumn=81
 " Display line numbers.
 set number
 
-" Remove search highlighting with Ctrl+I.
-nnoremap <silent> <C-i> :nohl<CR><C-i>
+" Remove search highlighting with Space+I.
+nnoremap <silent> <Space>i :nohl<CR>
 
 " Automatically detect when a file is changed.
 set autoread
