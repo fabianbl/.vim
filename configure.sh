@@ -1,13 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Copy vimrc.
-cp vimrc ~/.vimrc
+# Prepare Neovim config directory
+mkdir -p "${XDG_CONFIG_HOME:=$HOME/.config}"
 
-# Neovim configuration.
-mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
-ln -fs ~/.vim $XDG_CONFIG_HOME/nvim
-ln -fs ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
+# Symlink ~/.vimrc -> ~/.vim/vimrc
+ln -fs ~/.vim/vimrc ~/.vimrc
 
-# Get pathogen.
-mkdir -p autoload bundle
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# Symlink ~/.vim -> ~/.config/nvim (for Neovim)
+ln -fs ~/.vim "$XDG_CONFIG_HOME/nvim"
+
+# Symlink ~/.vimrc -> ~/.config/nvim/init.vim (Neovim expects init.vim)
+ln -fs ~/.vimrc "$XDG_CONFIG_HOME/nvim/init.vim"
+
+# Install vim-plug (plugin manager) if not already present
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

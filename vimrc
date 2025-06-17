@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/bundle')
 Plug 'Chiel92/vim-autoformat'
 " Plug 'Valloric/YouCompleteMe'
-Plug 'Exafunction/codeium.vim'
+"Plug 'Exafunction/codeium.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'drmikehenry/vim-headerguard'
@@ -115,4 +115,4 @@ function! g:HeaderguardLine3()
   return "#endif  // " . g:HeaderguardName() . ""
 endfunction
 
-set statusline+=%3{codeium#GetStatusString()}
+"set statusline+=%3{codeium#GetStatusString()}
