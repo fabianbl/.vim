@@ -9,6 +9,8 @@ Plug 'jistr/vim-nerdtree-tabs'       " keep NERDTree mirrored across tabs
 Plug 'ntpeters/vim-better-whitespace'" highlight stray trailing whitespace
 Plug 'scrooloose/nerdcommenter'      " fast toggle for code comments
 Plug 'scrooloose/nerdtree'           " project drawer
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'              " fuzzy file/grep picker (needs fzf binary)
 Plug 'vim-airline/vim-airline'       " lightweight status/tab line
 Plug 'vim-airline/vim-airline-themes'" airline theme pack (using jellybeans)
 Plug 'github/copilot.vim'            " GitHub Copilot integration
