@@ -82,6 +82,12 @@ let g:formatdef_clangformat = '"clang-format -style=file -fallback-style=google"
 let g:formatters_python = ['yapf']
 let g:formatter_yapf_style = 'google'
 
+" Keep the tree synced with whatever file was opened (fzf, :Rg, etc.).
+augroup nerdtree_sync
+  autocmd!
+  autocmd BufEnter * if bufname() !~# 'NERD_tree_' && exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1 && strlen(expand('%:p')) > 0 | silent! NERDTreeFind | wincmd p | endif
+augroup END
+
 " Interpret ROS launch files as XML for proper highlighting.
 autocmd BufRead,BufNewFile *.launch setfiletype xml
 
