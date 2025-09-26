@@ -83,6 +83,7 @@ nnoremap <F3> :Autoformat<CR>
 let g:formatdef_clangformat = '"clang-format -style=file -fallback-style=google"'
 let g:formatters_python = ['yapf']
 let g:formatter_yapf_style = 'google'
+let g:gutentags_cache_dir = expand('~/.cache/gutentags')
 
 " Keep the tree synced with whatever file was opened (fzf, :Rg, etc.).
 augroup nerdtree_sync
