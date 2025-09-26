@@ -54,7 +54,7 @@ if has("nvim")
   colorscheme atom-dark-256
   set list                           " reveal tabs/trailing whitespace
 else
-  colorscheme atom-dark
+  colorscheme atom-dark-256
   highlight ColorColumn ctermbg=7
 endif
 
