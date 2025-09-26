@@ -14,6 +14,7 @@ Plug 'junegunn/fzf.vim'              " fuzzy file/grep picker (needs fzf binary)
 Plug 'vim-airline/vim-airline'       " lightweight status/tab line
 Plug 'vim-airline/vim-airline-themes'" airline theme pack (using jellybeans)
 Plug 'github/copilot.vim'            " GitHub Copilot integration
+Plug 'ludovicchabant/vim-gutentags'  " auto-manage ctags per project
 call plug#end()
 
 " --- Key leaders ---------------------------------------------------------
@@ -71,6 +72,7 @@ nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
 nnoremap <silent> <Space>i :nohl<CR>          " drop search highlight quickly
+nnoremap <silent> <leader>d <C-]>             " jump to definition via tags
 
 " --- Plugin configuration ------------------------------------------------
 let g:NERDTreeMinimalUI = 1
