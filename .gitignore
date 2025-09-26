@@ -3,3 +3,4 @@ bundle
 .netrwhist
 init.vim
 .vim
+undo
